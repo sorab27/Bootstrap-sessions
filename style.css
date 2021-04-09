@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+body {
+  background-color: #fdf9f9;
+}
+
+/* .container {
+  padding-left: 30px;
+  padding-right: 30px;
+} */
+
+/* Navbar */
+
+.header {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.nav-link,
+.collapse > .navbar-nav > .nav-item > .nav-link {
+  color: #b9bab2;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover,
+.collapse > .navbar-nav > .nav-item > .nav-link:hover {
+  color: #b9bab2;
+  text-decoration: underline;
+}
+
+svg {
+  margin-right: 10px;
+}
+
+/* body */
+
+.body {
+  padding-top: 30px;
+}
+
+.panel1 {
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.panel-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 426px) {
+  .panel-group {
+    display: none;
+  }
+}
+
+.panel {
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.panel-body {
+  text-align: center;
+  color: #017eba;
+}
+
+.panel-body > a > svg {
+  margin-top: 35px;
+  margin-left: 10px;
+  color: #909184;
+}
+
+.panel-body > a > img {
+  margin-top: 20px;
+}
+
+.panel-body > p {
+  margin-top: 25px;
+}
+
+.panel-body > p:hover {
+  cursor: pointer;
+}
+
+.row2 {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0;
+}
+
+.row2_1 {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.row2_1 > h2 {
+  font-weight: normal;
+}
+
+.row2 > div > img {
+  width: 100%;
+  /* margin-left: 15px; */
+}
+
+.row3 {
+  margin-top: 50px;
+  /* background-color: red; */
+  text-align: center;
+  color: white;
+}
+
+.row3 > div > .span1 {
+  background-color: #017eba;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.span1 > p {
+  font-size: x-large;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.row3 > div > .span2 {
+  background-color: #a0b046;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.span2 > p {
+  font-size: x-large;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.row3 > div > .span3 {
+  background-color: #f78145;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.span3 > p {
+  font-size: x-large;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.span1 > svg,
+.span2 > svg,
+.span3 > svg {
+  width: 60px;
+  margin-top: 20px;
+  height: 60px;
+}
+
+.span1 > div,
+.span2 > div,
+.span3 > div {
+  margin-top: 30px;
+}
+
+.row4 {
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #b9bab2;
+}
+
+.project1Img {
+  background-image: url("https://templates.joomla-monster.com/joomla30/jm-services/images/djimageslider/projects/project1.jpg");
+  background-position: center;
+  height: 40vh;
+  /* padding: 0; */
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.project2Img {
+  background-image: url("https://templates.joomla-monster.com/joomla30/jm-services/images/djimageslider/projects/project2.jpg");
+  background-position: center;
+  height: 40vh;
+  /* padding: 0; */
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.project3Img {
+  background-image: url("https://templates.joomla-monster.com/joomla30/jm-services/images/djimageslider/projects/project3.jpg");
+  background-position: center;
+  height: 40vh;
+  /* padding: 0; */
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.project4Img {
+  background-image: url("https://templates.joomla-monster.com/joomla30/jm-services/images/djimageslider/projects/project4.jpg");
+  background-position: center;
+  height: 40vh;
+  /* padding: 0; */
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+}
+
+.project1 > div > h6,
+.project2 > div > h6,
+.project3 > div > h6,
+.project4 > div > h6 {
+  background-color: #017eba;
+  padding: 10px;
+  width: max-content;
+  color: white;
+  font-weight: lighter;
+}
+
+.project1Para,
+.project2Para,
+.project3Para,
+.project4Para {
+  background-color: #575a60;
+  opacity: 0.8;
+  color: white;
+  font-weight: lighter;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.project1Para:hover,
+.project2Para:hover,
+.project3Para:hover,
+.project4Para:hover {
+  text-decoration: underline;
+}
+
+.row5 {
+  margin-top: 50px;
+}
+
+.row5Left {
+  background-color: #ffffff;
+  display: flex;
+  border: 1px solid #b9bab2;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Left > div > img {
+    display: none;
+  }
+}
+
+.row5Right {
+  background-color: #ffffff;
+  border: 1px solid #b9bab2;
+  text-align: center;
+  background-image: url("https://templates.joomla-monster.com/joomla30/jm-services/templates/jm-services/images/testimonials.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.row5Right > img {
+  margin-top: 80px;
+}
+
+.row5Right > h5 {
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.row5Right > span {
+  font-weight: lighter;
+}
+
+.row5Right > p {
+  padding: 20px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+ul li::before {
+  content: attr(data-icon);
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+  line-height: 3rem;
+}
+
+.footer {
+  background-color: #e7e7e7;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer > div > div > h5 {
+  font-weight: bolder;
+  color: #898989;
+}
+
+.ul > li::before {
+  content: attr(data-icon1);
+  font-size: 1.25em;
+  margin-right: 10px;
+}
+
+.ul {
+  line-height: 2rem;
+}
+
+.footerButton > div > div > button {
+  width: 100%;
+  border-radius: 0;
+}
+
+.footerNews > p {
+  line-height: 20px;
+  color: #898989;
+  font-weight: lighter;
+}
+
+.footerConnected > div > div {
+  width: max-content;
+  height: max-content;
+  text-align: center;
+}
+
+.footerConnected > div > div > svg {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.footerFb > svg {
+  color: #204385;
+}
+
+.footerG > svg {
+  color: #d76951;
+}
+
+.footerTwitter > svg {
+  color: #1bb7ea;
+}
+
+.footerLinked > svg {
+  color: #02669a;
+}
+
+.footerSkype > svg {
+  color: #2eb3ec;
+}
+
+.footerV > svg {
+  color: #44c1e9;
+}
+
+.footerBottom {
+  border-top: 1px solid #92a1a1;
+  color: #898989;
+  font-size: smaller;
+}
+
+@media screen and (max-width: 426px) {
+  .footerBottom {
+    text-align: center;
+  }
+}
