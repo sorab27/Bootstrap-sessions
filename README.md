@@ -1,1 +1,1 @@
-This branch contains the "Bootstrap Layout Template".
+This branch contains the "Bootstrap Layout Practice Template".
