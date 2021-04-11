@@ -269,7 +269,7 @@ svg {
   border: 1px solid #b9bab2;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 769px) {
   .row5Left > div > img {
     display: none;
   }
@@ -288,6 +288,13 @@ svg {
 
 .row5Right > img {
   margin-top: 80px;
+  width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+  .row5Right > img {
+    margin-top: 50px;
+  }
 }
 
 .row5Right > h5 {
@@ -389,10 +396,14 @@ ul {
   border-top: 1px solid #92a1a1;
   color: #898989;
   font-size: smaller;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 10px; */
 }
 
 @media screen and (max-width: 426px) {
   .footerBottom {
+    display: block;
     text-align: center;
   }
 }
