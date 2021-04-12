@@ -1,0 +1,636 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+svg {
+  position: relative;
+  top: 3px;
+}
+
+.logo {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+}
+
+.logo img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.headerLinks {
+  border: 1px solid lightgrey;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.headerLinks div {
+  margin: auto;
+}
+
+.headerLinks div .headerLink {
+  text-align: center;
+  cursor: pointer;
+  color: #909184;
+}
+
+.headerLinks div .headerLink svg {
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 426px) {
+  .headerLinks div .headerLink svg {
+    padding: 5px;
+  }
+}
+
+.carousel-control-prev, .carousel-control-next,
+.carousel-control-next {
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+
+@media screen and (max-width: 426px) {
+  .carousel-control-prev, .carousel-control-next,
+  .carousel-control-next {
+    padding: 7px;
+  }
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: auto;
+}
+
+.carousel-control-next {
+  right: 88.5%;
+}
+
+@media screen and (max-width: 769px) {
+  .carousel-control-next {
+    right: 82%;
+  }
+}
+
+.carousel-item img {
+  width: 67%;
+}
+
+@media screen and (max-width: 426px) {
+  .carousel-item img {
+    width: 100%;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 33%;
+  background-color: white;
+  top: 0;
+  left: 67%;
+  height: 100%;
+}
+
+@media screen and (max-width: 426px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+.carousel-caption h2 {
+  padding: 10px 20px 10px 20px;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: left;
+  color: black;
+}
+
+@media screen and (max-width: 769px) {
+  .carousel-caption h2 {
+    font-size: 15px;
+    padding: 0px 10px 5px 10px;
+  }
+}
+
+.carousel-caption p {
+  color: black;
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 769px) {
+  .carousel-caption p {
+    font-size: small;
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.carousel-caption button {
+  border-radius: 0;
+  padding: 10px 40px 10px 40px;
+  margin-right: 30px;
+  background-color: #017eba;
+  color: white;
+}
+
+@media screen and (max-width: 769px) {
+  .carousel-caption button {
+    padding: 5px 20px 5px 20px;
+    margin-top: 0;
+    font-size: small;
+  }
+}
+
+.row3 {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.span1, .span2, .span3 {
+  background-color: #017eba;
+  border: 2px solid #017eba;
+  padding: 30px;
+  width: 100%;
+}
+
+.span1:hover, .span2:hover, .span3:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #017eba;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.span1 p, .span2 p, .span3 p {
+  font-size: x-large;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 769px) {
+  .span1 p, .span2 p, .span3 p {
+    font-size: medium;
+  }
+}
+
+.span2 {
+  background-color: #a0b046;
+  border: 2px solid #a0b046;
+}
+
+.span2:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #a0b046;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 2px solid #a0b046;
+}
+
+.span2 p {
+  font-size: x-large;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 769px) {
+  .span2 p {
+    font-size: medium;
+  }
+}
+
+.span3 {
+  background-color: #f78145;
+  border: 2px solid #f78145;
+}
+
+.span3:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #f78145;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 2px solid #f78145;
+}
+
+.span3 p {
+  font-size: x-large;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 769px) {
+  .span3 p {
+    font-size: medium;
+  }
+}
+
+.span1 svg, .span2 svg, .span3 svg,
+.span2 svg,
+.span3 svg {
+  width: 60px;
+  margin-top: 20px;
+  height: 60px;
+}
+
+@media screen and (max-width: 769px) {
+  .span1 svg, .span2 svg, .span3 svg,
+  .span2 svg,
+  .span3 svg {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+.span1 div, .span2 div, .span3 div,
+.span2 div,
+.span3 div {
+  margin-top: 30px;
+}
+
+.rowProject {
+  padding: 20px;
+  border: 1px solid lightgrey;
+  background-color: white;
+}
+
+.project {
+  position: relative;
+}
+
+.projImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.projectHead {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  color: white;
+}
+
+.projectHead h5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px 10px 20px;
+  background-color: #017eba;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 426px) {
+  .projectHead h5 {
+    font-size: small;
+  }
+}
+
+.projectHead h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.projectHead p {
+  padding: 10px 20px 10px 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 426px) {
+  .projectHead p {
+    font-size: x-small;
+  }
+}
+
+.projectHead p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.row5Left {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #b9bab2;
+  display: flex;
+}
+
+@media screen and (max-width: 769px) {
+  .row5Left {
+    display: block;
+  }
+}
+
+.row5Left div {
+  width: 50%;
+}
+
+@media screen and (max-width: 769px) {
+  .row5Left div {
+    width: 100%;
+    padding: 5px 20px px 20px;
+  }
+}
+
+.row5Left div h3 {
+  color: #017eba;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Left div h3 {
+    font-size: larger;
+  }
+}
+
+.row5Left div p {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Left div p {
+    font-size: small;
+  }
+}
+
+.row5Left div ul li {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Left div ul li {
+    font-size: small;
+  }
+}
+
+.row5Left div button {
+  margin-right: 20px;
+  border-radius: 0;
+  background-color: #017eba;
+  color: white;
+  padding: 10px 40px 10px 40px;
+}
+
+.row5Left div button:hover {
+  background-color: #494ce0;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Left div button {
+    font-size: small;
+  }
+}
+
+.row5Left div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 769px) {
+  .row5Left div img {
+    display: none;
+  }
+}
+
+.row5Left .row5Left_1 {
+  margin: auto;
+}
+
+@media screen and (max-width: 769px) {
+  .row5Left .row5Left_1 {
+    padding: 10px 20px 70px 20px;
+  }
+}
+
+ul {
+  list-style: none;
+  line-height: 3rem;
+}
+
+ul li::before {
+  content: attr(data-icon);
+  font-size: 1.25em;
+}
+
+.row5Right {
+  background-color: #ffffff;
+  border: 1px solid #b9bab2;
+  text-align: center;
+  background-image: url("https://templates.joomla-monster.com/joomla30/jm-services/templates/jm-services/images/testimonials.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.row5Right img {
+  margin-top: 80px;
+  width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+  .row5Right img {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .row5Right img {
+    margin-top: 90px;
+  }
+}
+
+.row5Right h5 {
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Right h5 {
+    font-size: large;
+  }
+}
+
+.row5Right span {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Right span {
+    font-size: medium;
+  }
+}
+
+.row5Right p {
+  padding: 20px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@media screen and (max-width: 426px) {
+  .row5Right p {
+    font-size: small;
+  }
+}
+
+.footer {
+  background-color: #e7e7e7;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer div div h5 {
+  font-weight: bolder;
+  color: #898989;
+}
+
+@media screen and (max-width: 426px) {
+  .footer div div h5 {
+    font-size: large;
+  }
+}
+
+.ul {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 426px) {
+  .ul {
+    font-size: small;
+  }
+}
+
+.ul li::before {
+  content: attr(data-icon1);
+  font-size: 1.25em;
+  margin-right: 10px;
+}
+
+.footerButton div div button {
+  width: 100%;
+  border-radius: 0;
+}
+
+.footerNews p {
+  line-height: 20px;
+  color: #898989;
+  font-weight: lighter;
+}
+
+.footerConnected div div {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+}
+
+.footerConnected div div svg {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.footerFb svg {
+  padding: 10px;
+  color: white;
+  background-color: #204385;
+}
+
+.footerG svg {
+  background-color: #d76951;
+  padding: 10px;
+  color: white;
+}
+
+.footerTwitter svg {
+  background-color: #1bb7ea;
+  padding: 10px;
+  color: white;
+}
+
+.footerLinked svg {
+  background-color: #02669a;
+  padding: 10px;
+  color: white;
+}
+
+.footerSkype svg {
+  padding: 10px;
+  color: white;
+  background-color: #2eb3ec;
+}
+
+.footerV svg {
+  padding: 10px;
+  color: white;
+  background-color: #44c1e9;
+}
+
+.footerBottom {
+  border-top: 1px solid #92a1a1;
+  color: #898989;
+  font-size: smaller;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 426px) {
+  .footerBottom {
+    display: block;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
