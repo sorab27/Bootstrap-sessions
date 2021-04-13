@@ -1,0 +1,101 @@
+$tablet: 769px;
+$mobile: 426px;
+$border: lightgrey;
+$grey: grey;
+$padding: 50px 30px 50px 30px;
+$paddingMob: 40px 15px 40px 15px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "body";
+
+// form
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: fit-content;
+  transform: translate(-50%, -50%);
+  border: 1px solid $border;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $tablet) {
+    width: 60%;
+    top: 50%;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    top: 65%;
+    border: none;
+  }
+  h2 {
+    font: {
+      size: x-large;
+      weight: 400;
+    }
+  }
+}
+
+.gmailPreInput {
+  border-right: none;
+}
+
+.gmailPre {
+  border-left: none;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.inputHint {
+  font-size: small;
+  margin-left: 10px;
+  color: $grey;
+}
+
+@import "Btn";
+
+.form-rowBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formLeft {
+  width: 100%;
+  padding: $padding;
+  @media screen and (max-width: $mobile) {
+    padding: $paddingMob;
+  }
+}
+
+.formRight {
+  @extend .formLeft;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  div {
+    img {
+      width: 244px;
+      height: 244px;
+    }
+    p {
+      text-align: center;
+      font-weight: 300;
+      font-size: medium;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}

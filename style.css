@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 769px) {
+  .form {
+    width: 60%;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .form {
+    width: 100%;
+    top: 65%;
+    border: none;
+  }
+}
+
+.form h2 {
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.gmailPreInput {
+  border-right: none;
+}
+
+.gmailPre {
+  border-left: none;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.inputHint {
+  font-size: small;
+  margin-left: 10px;
+  color: grey;
+}
+
+.Btn {
+  border: none;
+  color: #3b6ab4;
+  background-color: white;
+  font-weight: 500;
+}
+
+.Btn:hover {
+  background-color: #f6fafe;
+}
+
+.form-rowBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formLeft, .formRight {
+  width: 100%;
+  padding: 50px 30px 50px 30px;
+}
+
+@media screen and (max-width: 426px) {
+  .formLeft, .formRight {
+    padding: 40px 15px 40px 15px;
+  }
+}
+
+.formRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 769px) {
+  .formRight {
+    display: none;
+  }
+}
+
+.formRight div img {
+  width: 244px;
+  height: 244px;
+}
+
+.formRight div p {
+  text-align: center;
+  font-weight: 300;
+  font-size: medium;
+  width: 80%;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */

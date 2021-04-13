@@ -1,0 +1,9 @@
+.Btn {
+  border: none;
+  color: #3b6ab4;
+  background-color: white;
+  font-weight: 500;
+  &:hover {
+    background-color: #f6fafe;
+  }
+}

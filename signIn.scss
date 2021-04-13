@@ -1,0 +1,77 @@
+$tablet: 769px;
+$mobile: 426px;
+$border: lightgrey;
+$padding: 50px 30px 50px 30px;
+$aColor: #2077e9;
+$grey: grey;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "body";
+
+//Sign In
+
+.signIn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  height: fit-content;
+  transform: translate(-50%, -50%);
+  border: 1px solid $border;
+  padding: $padding;
+  border-radius: 10px;
+  text-align: center;
+  @media screen and (max-width: $tablet) {
+    width: 60%;
+    top: 50%;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    top: 50%;
+    border: none;
+  }
+  h2 {
+    font: {
+      size: x-large;
+      weight: 400;
+    }
+  }
+  span {
+    font-size: medium;
+  }
+}
+
+.form-rowBtn {
+  display: flex;
+  justify-content: space-between;
+  div {
+    a {
+      padding: 0;
+    }
+  }
+}
+
+form {
+  input {
+    width: 100%;
+  }
+  a {
+    color: $aColor;
+    float: left;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .signInPara {
+    text-align: left;
+    margin-top: 80px;
+    color: $grey;
+  }
+  .learnMore {
+    margin-top: -10px;
+  }
+}

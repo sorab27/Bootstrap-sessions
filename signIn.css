@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+.signIn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid lightgrey;
+  padding: 50px 30px 50px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .signIn {
+    width: 60%;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .signIn {
+    width: 100%;
+    top: 50%;
+    border: none;
+  }
+}
+
+.signIn h2 {
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.signIn span {
+  font-size: medium;
+}
+
+.form-rowBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-rowBtn div a {
+  padding: 0;
+}
+
+form input {
+  width: 100%;
+}
+
+form a {
+  color: #2077e9;
+  float: left;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+form .signInPara {
+  text-align: left;
+  margin-top: 80px;
+  color: grey;
+}
+
+form .learnMore {
+  margin-top: -10px;
+}
+/*# sourceMappingURL=signIn.css.map */
