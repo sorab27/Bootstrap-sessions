@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 
@@ -75,7 +76,22 @@ nav > a::after {
   align-items: flex-start;
   text-align: center;
   height: 85vh;
-  padding-left: 50px;
+  padding-left: 40px;
+  opacity: 0;
+  animation-name: body;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes body {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -156,6 +172,21 @@ nav > a::after {
   padding: 30px;
   cursor: pointer;
   box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+  opacity: 0;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .box:hover {
@@ -183,6 +214,21 @@ nav > a::after {
 .aboutDiv {
   background-color: var(--aboutBack);
   padding: 100px 60px 60px 60px;
+  animation-name: about;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes about {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .aboutDiv span {
@@ -222,6 +268,21 @@ nav > a::after {
   width: 100%;
   object-fit: contain;
   padding: 0 10px 0 70px;
+  opacity: 0;
+  animation-name: aboutImg;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutImg {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -235,6 +296,21 @@ nav > a::after {
   height: 100%;
   background-color: var(--aboutBack);
   padding: 20px 70px 0 10px;
+  opacity: 0;
+  animation-name: aboutInfo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutInfo {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -315,6 +391,21 @@ nav > a::after {
   text-align: center;
   background: #f1f6fe;
   margin-top: 100px;
+  opacity: 0;
+  animation-name: aboutCard;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutCard {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .aboutCard > i {
@@ -352,6 +443,21 @@ nav > a::after {
 .bodyRow2Clients > div > img {
   width: 130px;
   padding: 20px;
+  opacity: 0;
+  animation-name: clients;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes clients {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 svg {
@@ -370,6 +476,21 @@ svg {
 
 .serviceHead {
   text-align: center;
+  opacity: 0;
+  animation-name: services;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes services {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .serviceHead > span {
@@ -401,6 +522,21 @@ svg {
   padding: 50px 10px 50px 10px;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  animation-name: serviceCard;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes serviceCard {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .serviceCard:hover {
@@ -451,6 +587,21 @@ svg {
 
 .contactHead {
   text-align: center;
+  opacity: 0;
+  animation-name: contact;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contact {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contactHead > span {
@@ -482,6 +633,21 @@ svg {
   padding: 25px;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  animation-name: contactCards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contactCards {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contactAddress i,
@@ -525,6 +691,10 @@ svg {
 iframe {
   width: 100%;
   height: 100%;
+  opacity: 0;
+  animation-name: contactCards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .newsLetter {
