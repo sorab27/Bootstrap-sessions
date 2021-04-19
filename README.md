@@ -1,0 +1,1 @@
+This branch contains the assignment given during the session of "Mini Projects With Keyframes, Transitions, etc".

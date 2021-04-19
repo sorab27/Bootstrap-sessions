@@ -1,0 +1,416 @@
+:root {
+  --white: white;
+  --black: black;
+  --red: red;
+  --yellow: yellow;
+  --green: green;
+  --lightDark: #333;
+  --lightPink: lightPink;
+  --purple: purple;
+  --lightBlue: lightblue;
+  --hill: #3777b9;
+  --sun: #e3b500;
+  --cloud: #dcdcdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Traffic Light */
+
+.trafficLight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+  height: 100vh;
+  width: fit-content;
+  border: 5px solid var(--white);
+  border-radius: 50px;
+  background-color: var(--lightDark);
+}
+
+.lightRed,
+.lightYellow,
+.lightGreen {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  border-top: 10px solid var(--black);
+}
+
+.lightRed {
+  background-color: var(--red);
+  animation-name: redLight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes redLight {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.lightYellow {
+  background-color: var(--yellow);
+  animation-name: yellowLight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes yellowLight {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.lightGreen {
+  background-color: var(--green);
+  animation-name: greenLight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes greenLight {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Boxes */
+
+.boxes {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box1,
+.box2 {
+  height: 200px;
+  width: 200px;
+}
+
+.box1 {
+  background-color: var(--lightPink);
+}
+
+.box2 {
+  background-color: var(--purple);
+  animation: 5s slideBox infinite ease-in-out;
+  animation-direction: alternate;
+  position: relative;
+  opacity: 0.7;
+}
+@keyframes slideBox {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 60%;
+  }
+}
+
+/* Heart */
+
+.heartMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--lightDark);
+}
+
+.heart {
+  height: 100px;
+  width: 100px;
+  background-color: var(--red);
+  position: relative;
+  transform: rotate(-45deg);
+  animation: heart 2s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    transform: scale(1.1) scale(1.2) rotate(-45deg);
+  }
+}
+
+.heart::after {
+  background-color: inherit;
+  height: 100px;
+  width: 100px;
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.heart::before {
+  background-color: inherit;
+  height: 100px;
+  width: 100px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  border-radius: 50%;
+}
+
+/* Timer */
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--lightDark);
+  border-top: 2px solid var(--white);
+}
+
+.timerTop {
+  height: 50px;
+  width: 50px;
+  border: 15px solid var(--lightBlue);
+  border-radius: 50%;
+}
+
+.mainTimer {
+  height: 300px;
+  width: 300px;
+  border: 15px solid var(--lightBlue);
+  border-radius: 50%;
+  position: relative;
+  animation: stick 1s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.timerStick {
+  height: 130px;
+  width: 5px;
+  border: 10px solid var(--lightBlue);
+  border-radius: 50px;
+  margin: auto;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.stickBall {
+  border: 20px solid var(--lightBlue);
+  width: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.mainTimer:hover {
+  animation-play-state: paused;
+}
+
+@keyframes stick {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .Hills */
+
+.nature {
+  border-top: 1px solid var(--white);
+  background-color: var(--lightPink);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: -60px;
+  left: 50px;
+  border-radius: 50%;
+  background-color: var(--sun);
+  animation: sun 5s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes sun {
+  to {
+    transform: translateY(250px);
+  }
+}
+
+.clouds {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cloud,
+.cloud2 {
+  width: 100px;
+  height: 100px;
+  background: var(--cloud);
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  animation: cloud 3s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud2 {
+  animation: cloud 5s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cloud::after,
+.cloud::before,
+.cloud2::after,
+.cloud2::before {
+  content: "";
+  background: inherit;
+}
+
+.cloud::after,
+.cloud2::after {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  left: -50px;
+  border-radius: 50% 50% 0 50%;
+}
+
+.cloud::before,
+.cloud2::before {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0px;
+  right: -50px;
+  border-radius: 50% 50% 50% 0;
+}
+
+.hill {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 200px solid var(--hill);
+}
+
+.hill::after {
+  content: "";
+  width: 0;
+  height: 0;
+  transform: scale(1.3);
+  border-left: 180px solid transparent;
+  position: absolute;
+  right: -50px;
+  border-right: 180px solid transparent;
+  border-bottom: 200px solid var(--hill);
+}
+
+.hill::before {
+  content: "";
+  width: 0;
+  height: 0;
+  transform: scale(1.3);
+  border-left: 180px solid transparent;
+  position: absolute;
+  left: -80px;
+  border-right: 180px solid transparent;
+  border-bottom: 200px solid var(--hill);
+}
