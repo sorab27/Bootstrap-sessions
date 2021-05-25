@@ -773,3 +773,15 @@ iframe {
   color: var(--greyText);
   font-size: medium;
 }
+
+.footer-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .footer-data {
+    flex-direction: column;
+  }
+}
